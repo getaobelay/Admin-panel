@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <link href="css/StyleSheet.css" rel="stylesheet"  type="text/css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+    	  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <div class="navbar-brand navbar-brand-centered"><asp:Literal ID="ltlAdmin" runat="server"></asp:Literal> ברוך הבא </div>
+		    </div>
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav navbar-right"">
+		        <li><a href="../Default.aspx">דף הבית</a></li>
+		        <li><a href="../OrderList.aspx">הזמנות</a></li>
+                <li><a href="../edit/UpdateOrder.aspx">ערוך הזמנה</a></li>
+		        <li><a href="../Admin.aspx">אדמין</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-left">
+		        <li><a href="../ProductsList.aspx">מוצרים</a></li>
+                <li><a href="../edit/EditProducts.aspx">ערוך מוצר</a></li>
+		        <li><a href="../Users.aspx">משתמשים</a></li>
+		        <li><a href="../logout.aspx">התנתק</a></li>		        
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+        </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer>
+
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
